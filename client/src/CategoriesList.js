@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
+import './App.css'
 
 class CategoriesList extends Component {
 
   render() {
     const { categories } = this.props
-    console.log(this.props)
-    const categoriesList = categories.map((category) => <p key={category.id}>{category.title}</p>)
 
+    const categoriesList = categories.map((category) => <div className="CategoryCard" key={category.id} style={{ width: 50, height: 50, background: '#F9CB6E'}}>{category.title}</div>)
 
     return (
       <div>

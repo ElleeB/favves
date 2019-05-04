@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import CategoriesList from './CategoriesList'
 import { connect } from 'react-redux'
-import { fetchCategories } from './actions/categoryActions'
+import { fetchCategories } from './actions/fetchCategories'
+import './App.css'
 
 class App extends Component {
 
