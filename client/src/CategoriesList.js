@@ -4,7 +4,7 @@ class CategoriesList extends Component {
 
   render() {
     const { categories } = this.props
-    console.log(categories)
+    console.log(this.props)
     const categoriesList = categories.map((category) => <p key={category.id}>{category.title}</p>)
 
 

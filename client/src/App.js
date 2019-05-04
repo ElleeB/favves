@@ -5,13 +5,13 @@ import { fetchCategories } from './actions/categoryActions'
 
 class App extends Component {
 
+  componentDidMount() {
+    this.props.fetchCategories()
+  }
+
   render() {
     return (
       <div className="App">
-        <h1>APP</h1>
-        <header className="App-header">
-          <h2>header</h2>
-        </header>
         <CategoriesList categories={this.props.categories}/>
       </div>
     );
