@@ -4,10 +4,8 @@ const Category = props => {
   const { category } = props
 
   return (
-    <div>
-      <li>
-        {category.text}
-      </li>
+    <div style={{ width: 50, height: 50, margin: 10, padding: 50, background: '#F9CB6E'}}>
+      {category.title}
     </div>
   )
 }

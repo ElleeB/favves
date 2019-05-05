@@ -4,15 +4,13 @@ import Category from './Category'
 class Categories extends Component {
 
   render() {
-    const { categories, addCategory } = this.props
-
+    const { categories } = this.props
     const categoryList = categories.map(
       category => {
         return (
           <Category
             key={category.id}
             category={category}
-            addCategory={addCategory}
           />
         )
       }

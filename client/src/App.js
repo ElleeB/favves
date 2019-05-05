@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import CategoriesList from './CategoriesList'
+import CategoriesContainer from './containers/CategoriesContainer'
 import { connect } from 'react-redux'
 import { fetchCategories } from './actions/fetchCategories'
 import './App.css'
@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <CategoriesList categories={this.props.categories}/>
+        <CategoriesContainer categories={this.props.categories}/>
       </div>
     );
   }
