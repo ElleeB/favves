@@ -5,7 +5,7 @@ const Favorite = props => {
 
   return (
     <div>
-      {favorite.title}
+      {favorite.text}
     </div>
   )
 }
