@@ -6,7 +6,7 @@ class Categories extends Component {
 
   render() {
     const { categories } = this.props
-    const categoryList = categories.map(
+    const categoryList = categories.categories.map(
          category => {
         return (
           <Category

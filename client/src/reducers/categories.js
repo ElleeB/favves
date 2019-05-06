@@ -1,7 +1,7 @@
 import cuid from 'cuid'
 export const cuidFn = cuid
 
-export default function categoriesReducer(state = {
+export default function categories(state = {
   loading: false,
   categories: [] },
   action) {

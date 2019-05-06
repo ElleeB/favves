@@ -1,5 +1,5 @@
 import React from 'react'
-// import FavoritesContainer from '../../containers/FavoritesContainer'
+import FavoritesContainer from '../../containers/FavoritesContainer'
 
 const Category = props => {
   const { category } = props
@@ -7,6 +7,7 @@ const Category = props => {
   return (
     <div>
       {category.title}
+      <FavoritesContainer category={category} />
     </div>
   )
 }
