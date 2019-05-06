@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react'
 import Category from './Category'
 
@@ -6,7 +7,7 @@ class Categories extends Component {
   render() {
     const { categories } = this.props
     const categoryList = categories.map(
-      category => {
+         category => {
         return (
           <Category
             key={category.id}

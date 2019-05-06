@@ -1,7 +1,10 @@
 import cuid from 'cuid'
 export const cuidFn = cuid
 
-export default function categoriesReducer(state = { categories: [] }, action) {
+export default function categoriesReducer(state = {
+  loading: false,
+  categories: [] },
+  action) {
 
   switch (action.type) {
 

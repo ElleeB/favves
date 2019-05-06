@@ -1,18 +1,17 @@
 import React from 'react'
+import FavoritesContainer from '../../containers/FavoritesContainer'
 
 const Category = props => {
   const { category } = props
 
   return (
-    <div style={{ width: 50, height: 50, margin: 10, padding: 50, background: '#F9CB6E'}}>
+    <div>
       {category.title}
+      <FavoritesContainer category={category} />
     </div>
   )
 }
 
 export default Category
 
-// import FavoritesContainer from '../../containers/FavoritesContainer'
-// const handleOnClick = () => props.deleteCategory(category.id)
-// <button onClick={handleOnClick}> x </button>
-        // <FavoritesContainer category={category} />
+// style={{ width: 50, height: 50, margin: 10, padding: 50, background: '#F9CB6E'}}

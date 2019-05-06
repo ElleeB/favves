@@ -1,7 +1,10 @@
 import cuid from 'cuid'
 export const cuidFn = cuid
 
-export default function favoritesReducer(state = { favorites: [] }, action) {
+export default function favoritesReducer(state = {
+  loading: false,
+  favorites: [] },
+  action) {
 
   switch (action.type) {
 
