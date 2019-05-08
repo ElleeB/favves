@@ -11,9 +11,10 @@ class FavoritesContainer extends Component {
   }
 
   render() {
+
     return (
       <div>
-        <Favorites favorites={this.props.favorites} />
+        <Favorites favorites={this.props.favorites.favorites.filter(favorite => favorite.category_id === this.props.category.id)} />
       </div>
     );
   }
@@ -22,6 +23,5 @@ class FavoritesContainer extends Component {
 const mapStateToProps = state => {
   return {favorites: state.favorites}
 }
-
 
 export default connect(mapStateToProps, {fetchFavorites})(FavoritesContainer)

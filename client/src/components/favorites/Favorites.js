@@ -6,7 +6,7 @@ class Favorites extends Component {
 
   render() {
     const { favorites } = this.props
-    const favoriteList = favorites.favorites.map(
+    const favoriteList = favorites.map(
       favorite => {
         return (
           <Favorite
