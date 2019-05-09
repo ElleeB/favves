@@ -6,7 +6,7 @@ const Category = props => {
 
   return (
     <div>
-      {category.title}
+      <h4>{category.title}</h4>
       <FavoritesContainer category={category} />
     </div>
   )

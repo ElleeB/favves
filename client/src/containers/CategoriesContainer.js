@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import Categories from '../components/categories/Categories'
 import { fetchCategories } from '../actions/fetchCategories'
-import '../App.css'
 
 class CategoriesContainer extends Component {
 
@@ -12,7 +11,7 @@ class CategoriesContainer extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{background: 'pink'}}>
         <Categories categories={this.props.categories} />
       </div>
     );
