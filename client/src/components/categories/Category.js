@@ -5,7 +5,7 @@ const Category = props => {
   const { category } = props
 
   return (
-    <div>
+    <div style={{background: 'pink'}}>
       <h4>{category.title}</h4>
       <FavoritesContainer category={category} />
     </div>

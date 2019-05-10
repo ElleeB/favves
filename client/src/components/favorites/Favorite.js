@@ -4,7 +4,7 @@ const Favorite = props => {
   const { favorite } = props
 
    return (
-    <div>
+    <div style={{background: '#CCFFFF'}}>
       {favorite.text}
     </div>
   )

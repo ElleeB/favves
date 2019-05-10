@@ -12,7 +12,7 @@ class FavoritesContainer extends Component {
   render() {
 
     return (
-      <div style={{background: '#CCFFFF'}}>
+      <div>
         <Favorites favorites={this.props.favorites.favorites.filter(favorite => favorite.category_id === this.props.category.id)} />
       </div>
     );

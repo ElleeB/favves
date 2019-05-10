@@ -11,7 +11,7 @@ class CategoriesContainer extends Component {
 
   render() {
     return (
-      <div style={{background: 'pink'}}>
+      <div>
         <Categories categories={this.props.categories} />
       </div>
     );
