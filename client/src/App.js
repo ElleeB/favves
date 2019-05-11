@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './App.css'
 import CategoriesContainer from './containers/CategoriesContainer'
 
 class App extends Component {

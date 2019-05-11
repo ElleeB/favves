@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react'
 import Favorite from './Favorite'
+import '../../App.css'
 
 class Favorites extends Component {
 
@@ -18,7 +19,7 @@ class Favorites extends Component {
     )
 
     return(
-      <ul>
+      <ul className='favorites'>
         {favoriteList}
       </ul>
     )

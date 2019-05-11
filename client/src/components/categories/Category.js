@@ -5,7 +5,7 @@ const Category = props => {
   const { category } = props
 
   return (
-    <div>
+    <div className='category-card'>
       <h4>{category.title}</h4>
       <FavoritesContainer category={category} />
     </div>
